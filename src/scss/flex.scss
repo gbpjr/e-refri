@@ -39,8 +39,8 @@
 }
 
 .flex-item-10 {
-  flex: 0 0 calc();
-  max-width: calc();
+  flex: 0 0 calc(83.333% - 20px);
+  max-width: calc(80.3333% - 20px);
 }
 
 @media (max-width: 915px) {
@@ -49,8 +49,6 @@
   }
 
   .flex-item-2, .flex-item-4, .flex-item-6, .flex-item-8, .flex-item-10 {
-    // margin-left: 0px;
-    // margin-right: 0px;
     align-self: auto;
     max-width: 100%;
   }
