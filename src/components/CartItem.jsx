@@ -11,13 +11,9 @@ class CartItem extends Component {
 
   render() {
     return (
-      <div className="flex cart-item">
-        <div className="flex flex-item-10">
-          <span>{this.props.cartItem.sabor + ' ' + this.props.cartItem.quantidade} | {this.props.cartItem.unid} Un. | R$ {Number(this.props.cartItem.valor*this.props.cartItem.unid) + ',00'}</span>
-        </div>
-        <div className="btn-wrapper flex-item-2">
+      <div className="flex-row cart-item">
+          <div>{this.props.cartItem.sabor + ' ' + this.props.cartItem.quantidade} | {this.props.cartItem.unid} Un. | R$ {Number(this.props.cartItem.valor*this.props.cartItem.unid) + ',00'}</div>
           <button onClick={(e) => this.removeItem(this.props.cartItem, e)}><span className="fas fa-trash-alt"></span></button>
-        </div>
       </div>
     )
   }

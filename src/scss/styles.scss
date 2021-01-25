@@ -126,27 +126,22 @@ ul {
   padding: 15px;
   border-radius: 15px;
   color: $graffiti;
-  margin: 40px 0;
+  margin: 40px 0px;
   box-shadow: 2px 2px 5px $lightGrey2;
 
 
   .cart-item {
-    font-size: 0.9em;
-    background: #fff;
-    margin: 10px 0;
+    margin: 10px 0px;
+    align-self: center;
     animation: show .5s forwards;
+    background: #fff;
 
-
-    span {
-      text-align: right;
+    div {
       align-self: center;
-      justify-content: flex-start;
+      font-size: 0.9em;
     }
   }
 
-  .btn-wrapper {
-    display: flex;
-  }
 
   button {
     display: flex;
@@ -157,6 +152,7 @@ ul {
     background: $pastelRed;
     color: #fff;
     font-size: 1.5em;
+    margin-left: auto;
   }
 
   button:focus {
@@ -166,12 +162,14 @@ ul {
   button:hover {
     background: $lightPastelRed;
   }
+}
 
-  @media (max-width: 768px) {
-    .cart {
-      margin-right: 0px;
-      margin-left: 0px;
-    }
+@media (max-width: 915px) {
+  .cart {
+    margin: 40px 20px;
+  }
+  .cart-item {
+    align-self: center;
   }
 }
 
